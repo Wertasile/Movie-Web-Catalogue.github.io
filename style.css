@@ -316,3 +316,22 @@ iframe{
     justify-content: space-between;
     padding:5px;
 }
+
+@media (max-width:750px){
+    #nav-bar{
+        flex-direction: column;
+        padding:0px 5px;
+    }
+    .search{
+        width:100%;
+    }
+    .toggle{
+        font-size:12px;
+    }
+    .scrolling-grid{
+        grid-template-columns: repeat(20,140px);
+    }
+    .scrolling-grid img{
+        width: 140px;
+    }
+}
