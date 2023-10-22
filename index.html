@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="homepage.js" defer></script>
+    <title>MovieMANIA</title>
+</head>
+<body>
+    <div id="nav-bar">
+        <div id="home">
+            <a href="index.html">
+                MOVIEMANIA
+            </a>
+        </div>
+        <div class="search">      
+            <input id="search-box" type="text" placeholder="Search movies">
+            <div id="switch" class="toggle">
+                MOVIE
+            </div>
+            <div class="btn-container">
+                <button class="btn">
+                    <img class="search-button" src="iamges/search.png">
+                </button>   
+            </div>
+        </div>
+        <div>
+                <img src="iamges/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" style="height: 40px;">
+        </div>
+        
+    </div>
+
+    <!--POPULAR-->
+    <div style="padding: 10px; display:flex; flex-direction: row; column-gap: 10px;">
+
+        <h2>POPULAR</h2>
+        <div id="movie-toggle" class="toggle"onclick="getpopular('movie')">MOVIES</div>
+        <div id="tv-toggle" class="toggle" onclick="getpopular('tv')">TV-SHOWS</div>
+    </div>
+    <div id="popular" class="scrolling-grid">
+
+    </div>
+
+    <!--TOP-RATED-->
+    <div style="padding: 10px; display:flex; flex-direction: row; column-gap: 10px;">
+
+        <h2>TOP RATED</h2>
+        <div id="movie-toggle" class="toggle" onclick="gettoprated('movie')">MOVIES</div>
+        <div id="tv-toggle" class="toggle" onclick="gettoprated('tv')">TV-SHOWS</div>
+    </div>
+    <div id="top-rated" class="scrolling-grid">
+
+    </div>
+
+    <!--TRENDING-->
+    <div style="padding: 10px; display:flex; flex-direction: row; column-gap: 10px;">
+
+        <h2>TRENDING</h2>
+        <div id="movie-toggle" class="toggle" onclick="gettrending('movie')">MOVIES</div>
+        <div id="tv-toggle" class="toggle" onclick="gettrending('tv')">TV-SHOWS</div>
+    </div>
+    <div id="trending" class="scrolling-grid">
+    </div>
+    <!--AIRING-->
+    <div style="padding: 10px; display:flex; flex-direction: row; column-gap: 10px;">
+
+        <h2>AIRING</h2>
+        
+    </div>
+
+    <div id='on-air' class="scrolling-grid">    
+
+    </div>
+    
+</body>
+</html>

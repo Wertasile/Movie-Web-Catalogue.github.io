@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="griditemscript.js" defer></script>
+</head>
+<body>
+    <div id="nav-bar">
+        <div id="home">
+            <a href="index.html">
+                MOVIEMANIA
+            </a>
+        </div>
+        <div class="search">      
+            <input id="search-box" type="text" placeholder="Search movies">
+            <div id="switch" class="toggle">
+                MOVIE
+            </div>
+            <div class="btn-container">
+                <button class="btn">
+                    <img class="search-button" src="iamges/search.png">
+                </button>   
+            </div> 
+        </div>
+        
+    </div>
+    <div id="movie-container">
+        <div id="movie-grid">
+            <div id="movie-img">
+                
+            </div>
+            
+            <div id="movie-details-grid">
+                <div id="movie-header">
+                    <div id="movie-title">
+
+                    </div>
+                    
+                    
+                </div>
+                <div style="display:flex; justify-content: center; align-items: center;">
+                    <div style="display:flex; justify-content: space-between; column-gap: 5px; align-items: center;">
+                        <div id="vote_average">
+    
+                        </div>
+                        <div id="release-year">
+                                
+                        </div>
+                        <div id="runtime">
+                                
+                        </div>
+                    </div>
+                </div>
+                <div style="display:flex; justify-content: center; align-items: center;">
+                    <div id="genre" style="display:flex; justify-content: space-between; column-gap: 5px; align-items: center;">
+                    </div>
+                </div>
+                
+                <div id="genre">
+
+                </div>
+                <div id="movie-plot">
+
+                </div>
+                <div class="line-seperate two-col-flex">
+                    <div><h2>Actors</h2></div>
+                    <div id="movie-actors"></div> 
+                </div>
+                <div class="line-seperate two-col-flex">
+                    <div><h2>Director(s)</h2></div>
+                    <div id="movie-staff"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="seasons" style="margin:10px 5vw; padding:10px;">
+            
+    </div>
+    <div id="media-container">
+        <div  style="display: flex; justify-content: space-between;">
+            <div><h2>Images</h2></div>
+            
+            <div id="view-images" class="toggle"><h3>View All Images > </h3></div>
+        </div>
+        <div id="image-container" class="container">
+            <div>
+                <img class="image">
+            </div>
+            <div>
+                <img class="image">
+            </div>
+            <div>
+                <img class="image">
+            </div>
+            <div>
+                <img class="image">
+            </div>
+            <div>
+                <img class="image">
+            </div>
+            <div>
+                <img class="image">
+            </div>
+            <div>
+                <img class="image">
+            </div>
+            <div>
+                <img class="image">
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top:20px;">
+            <div><h2>Videos</h2></div>
+            <div  id="view-videos" class="toggle"><h3>View All Videos > </h3></div>
+        </div>
+        <div id="video-container" class="container">
+            
+        </div>
+        
+    </div>
+
+    <div id="BTS-container">
+        <h2>Behind the Scenes and Other Info</h2>
+        <div id="BTS">
+            
+            <div id="Production-Companies"></div>
+            <div id="Production-Countries"></div>
+        </div>
+        
+
+    </div>
+
+    <div style="margin:10px 5vw;">
+        <h2>You May Like</h2>
+        <div id="similar-container" class="container">
+
+            
+        </div>
+    </div>
+</body>
+</html>
